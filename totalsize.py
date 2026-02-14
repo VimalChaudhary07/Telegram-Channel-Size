@@ -2,11 +2,11 @@ from telethon.sync import TelegramClient
 from telethon.tl.types import MessageMediaDocument, MessageMediaPhoto
 
 # Replace with your API credentials
-api_id = 17429792  # <-- Replace with your actual API ID
-api_hash = '2f81151a075dd444eddcbef6ce37aa0b'  # <-- Replace with your actual API Hash
+api_id =   # <-- Replace with your actual API ID XXXXXXXXXX
+api_hash = ''  # <-- Replace with your actual API Hash XXXXXXXXXXXXXXXXXXXXXXXXX
 
 # Replace with your target channel ID (with -100 prefix)
-channel_id = -1003653111507  # <-- Replace with your actual channel ID
+channel_id = -100  # <-- Replace with your actual channel ID "-100XXXXXXXXX"
 
 # Create the client
 client = TelegramClient('session_name', api_id, api_hash)
@@ -41,3 +41,4 @@ async def main():
 # Run the async function
 with client:
     client.loop.run_until_complete(main())
+
